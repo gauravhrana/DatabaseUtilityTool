@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseUtilityTool", "DatabaseUtilityTool\DatabaseUtilityTool.csproj", "{FBCC0224-271D-4084-A6AF-79047E5DD026}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{78DC8998-1E36-4E57-B3C3-5E81763357C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{6B3FD0B2-D2AC-4F7C-83DB-066C88897124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Components.DataAccess", "..\Components\Framework.DataAccess\Core\Framework.Components.DataAccess.csproj", "{3C1BF755-3C2A-4016-ABA7-62F6DEA056F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components - Framework", "Components - Framework", "{4DBCC7A9-ED19-4932-B469-4B889F5BB329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseTool.Components.Core", "..\Components\Database Tool\Core\DatabaseTool.Components.Core.csproj", "{5CCB3A26-7294-4317-A16A-D7387946B291}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{219C47B9-AADF-4A8F-949F-7676DBE7132E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseTool.Resources.TreeIcons", "..\Resources\DataBase Tool\TreeIcons\DatabaseTool.Resources.TreeIcons.csproj", "{2AD77640-2C7C-4388-9021-C57C11D8C974}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBCC0224-271D-4084-A6AF-79047E5DD026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBCC0224-271D-4084-A6AF-79047E5DD026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBCC0224-271D-4084-A6AF-79047E5DD026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBCC0224-271D-4084-A6AF-79047E5DD026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C1BF755-3C2A-4016-ABA7-62F6DEA056F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1BF755-3C2A-4016-ABA7-62F6DEA056F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1BF755-3C2A-4016-ABA7-62F6DEA056F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1BF755-3C2A-4016-ABA7-62F6DEA056F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CCB3A26-7294-4317-A16A-D7387946B291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CCB3A26-7294-4317-A16A-D7387946B291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CCB3A26-7294-4317-A16A-D7387946B291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CCB3A26-7294-4317-A16A-D7387946B291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD77640-2C7C-4388-9021-C57C11D8C974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD77640-2C7C-4388-9021-C57C11D8C974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD77640-2C7C-4388-9021-C57C11D8C974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD77640-2C7C-4388-9021-C57C11D8C974}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FBCC0224-271D-4084-A6AF-79047E5DD026} = {78DC8998-1E36-4E57-B3C3-5E81763357C4}
+		{3C1BF755-3C2A-4016-ABA7-62F6DEA056F0} = {4DBCC7A9-ED19-4932-B469-4B889F5BB329}
+		{5CCB3A26-7294-4317-A16A-D7387946B291} = {6B3FD0B2-D2AC-4F7C-83DB-066C88897124}
+		{2AD77640-2C7C-4388-9021-C57C11D8C974} = {219C47B9-AADF-4A8F-949F-7676DBE7132E}
+	EndGlobalSection
+EndGlobal

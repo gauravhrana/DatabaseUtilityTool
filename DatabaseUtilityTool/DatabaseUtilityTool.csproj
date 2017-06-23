@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FBCC0224-271D-4084-A6AF-79047E5DD026}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DatabaseUtilityTool</RootNamespace>
+    <AssemblyName>DatabaseUtilityTool</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v9.1">
+      <HintPath>C:\Users\gau-laptop\Desktop\dlls\Infragistics2.Shared.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v9.1">
+      <HintPath>C:\Users\gau-laptop\Desktop\dlls\Infragistics2.Win.Misc.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDock.v9.1">
+      <HintPath>C:\Users\gau-laptop\Desktop\dlls\Infragistics2.Win.UltraWinDock.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v9.1">
+      <HintPath>C:\Users\gau-laptop\Desktop\dlls\Infragistics2.Win.UltraWinGrid.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v9.1">
+      <HintPath>C:\Users\gau-laptop\Desktop\dlls\Infragistics2.Win.UltraWinTabControl.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTree.v9.1">
+      <HintPath>C:\Users\gau-laptop\Desktop\dlls\Infragistics2.Win.UltraWinTree.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v9.1">
+      <HintPath>C:\Users\gau-laptop\Desktop\dlls\Infragistics2.Win.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="ScintillaNET">
+      <HintPath>..\..\..\DatabaseTool\UI\Desktop\bin\Debug\ScintillaNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationConstants.cs" />
+    <Compile Include="ClassGenerator.cs" />
+    <Compile Include="frmApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApplication.Designer.cs">
+      <DependentUpon>frmApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnection.designer.cs">
+      <DependentUpon>frmConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnectionManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnectionManager.designer.cs">
+      <DependentUpon>frmConnectionManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLog.designer.cs">
+      <DependentUpon>frmLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaster.designer.cs">
+      <DependentUpon>frmMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions.designer.cs">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTest.designer.cs">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ObjectTree.designer.cs">
+      <DependentUpon>ObjectTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleDockManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleDockManager.designer.cs">
+      <DependentUpon>SampleDockManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabControlEx.designer.cs">
+      <DependentUpon>TabControlEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabPageEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabPageEx.Designer.cs">
+      <DependentUpon>TabPageEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UltraTree DropHightLight DrawFilter.cs" />
+    <EmbeddedResource Include="frmApplication.resx">
+      <DependentUpon>frmApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnection.resx">
+      <DependentUpon>frmConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnectionManager.resx">
+      <DependentUpon>frmConnectionManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLog.resx">
+      <DependentUpon>frmLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaster.resx">
+      <DependentUpon>frmMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions.resx">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTest.resx">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectTree.resx">
+      <DependentUpon>ObjectTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SampleDockManager.resx">
+      <DependentUpon>SampleDockManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Components\Database Tool\Core\DatabaseTool.Components.Core.csproj">
+      <Project>{5ccb3a26-7294-4317-a16a-d7387946b291}</Project>
+      <Name>DatabaseTool.Components.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Components\Framework.DataAccess\Core\Framework.Components.DataAccess.csproj">
+      <Project>{3c1bf755-3c2a-4016-aba7-62f6dea056f0}</Project>
+      <Name>Framework.Components.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Resources\DataBase Tool\TreeIcons\DatabaseTool.Resources.TreeIcons.csproj">
+      <Project>{2ad77640-2c7c-4388-9021-c57c11d8c974}</Project>
+      <Name>DatabaseTool.Resources.TreeIcons</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(ProjectDir)\..\..\3rd Party\SciLexer.dll" "$(TargetDir)"
+copy /Y "$(ProjectDir)\..\..\3rd Party\SciLexer64.dll" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
